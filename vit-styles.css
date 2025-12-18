@@ -366,6 +366,16 @@ nav {
     text-align: justify;
 }
 
+.main-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.main-content ul li {
+    list-style-type: disc;
+    margin-bottom: 8px;
+}
+
 .organizer-box {
     flex: 0 0 300px;
     background-color: #f8f9fa;
