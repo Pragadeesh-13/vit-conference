@@ -43,7 +43,7 @@ iframe {
 .header-logo {
     display: none;
     position: absolute;
-    top: 20px;
+    top: 14px;
     left: 20px;
     z-index: 10;
 }
@@ -600,12 +600,16 @@ table td:first-child {
     .header {
         padding: 80px 15px 25px 15px;
         background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .header-content {
         background: #002147;
         margin: 0 -15px -25px -15px;
         padding: 30px 15px;
+        width: calc(100% + 30px);
     }
     
     .header-logo {
@@ -831,12 +835,16 @@ table td:first-child {
     .header {
         padding: 70px 10px 20px 10px;
         background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .header-content {
         background: #002147;
         margin: 0 -10px -20px -10px;
         padding: 25px 10px;
+        width: calc(100% + 20px);
     }
     
     .header-logo {
