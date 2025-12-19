@@ -40,17 +40,24 @@ iframe {
     padding: 30px 20px;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
 .header-logo {
     display: none;
-    position: absolute;
-    top: 14px;
-    left: 20px;
     z-index: 10;
+    align-items: center;
 }
 
 .header-logo img {
     height: 70px;
     width: auto;
+    display: block;
 }
 
 .hamburger-header {
@@ -60,10 +67,9 @@ iframe {
     border: none;
     cursor: pointer;
     padding: 10px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
     z-index: 1001;
+    margin-left: auto;
+    align-self: center;
 }
 
 .hamburger-header span {
@@ -107,7 +113,11 @@ iframe {
 /* Navigation styles */
 nav {
     background-color: #002147;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hamburger {
@@ -253,7 +263,7 @@ nav {
     padding: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow-y: auto;
-    max-height: calc(100vh - 250px);
+    height: fit-content;
     min-width: 500px;
 }
 
@@ -589,7 +599,137 @@ table td:first-child {
     color: #0088cc;
 }
 
+
 /* Responsive Media Queries */
+@media (max-width:1410px){
+    .main-content{
+        width: 600px;
+    }
+    .organizer-logo img {
+        max-width: 220px;
+    }
+}
+/* Medium desktop screens (up to 1346px) */
+@media (max-width: 1346px) {
+    .header h1 {
+        font-size: 26px;
+    }
+    
+    .header h2 {
+        font-size: 17px;
+    }
+    
+    .nav-bar li a {
+        font-size: 15px;
+        padding: 14px 18px;
+    }
+    
+    .sidebar h3 {
+        font-size: 17px;
+    }
+    
+    .sidebar li a {
+        font-size: 15px;
+    }
+    
+    .main-content {
+        font-size: 15px;
+        padding: 28px;
+    }
+    
+    .main-content h2 {
+        font-size: 22px;
+    }
+    
+    .main-content h3 {
+        font-size: 19px;
+    }
+    
+    .main-content h4 {
+        font-size: 16px;
+    }
+    
+    .main-content p {
+        font-size: 15px;
+    }
+    
+    .organizer-box h3 {
+        font-size: 1.1em;
+    }
+    
+    .organizer-info {
+        font-size: 13px;
+    }
+}
+
+/* Medium laptops (up to 1124px) */
+@media (max-width: 1124px) {
+    .header h1 {
+        font-size: 25px;
+    }
+    
+    .header h2 {
+        font-size: 16px;
+    }
+    
+    .nav-bar li a {
+        font-size: 14px;
+        padding: 13px 16px;
+    }
+    
+    .sidebar {
+        flex: 0 0 220px;
+    }
+    
+    .sidebar h3 {
+        font-size: 16px;
+    }
+    
+    .sidebar li a {
+        font-size: 14px;
+        padding: 11px 14px;
+    }
+    
+    .main-content {
+        font-size: 14px;
+        padding: 25px;
+    }
+    
+    .main-content h2 {
+        font-size: 21px;
+    }
+    
+    .main-content h3 {
+        font-size: 18px;
+    }
+    
+    .main-content h4 {
+        font-size: 15px;
+    }
+    
+    .main-content p {
+        font-size: 14px;
+    }
+    
+    .organizer-box {
+        flex: 0 0 260px;
+        padding: 18px;
+    }
+    
+    .organizer-box h3 {
+        font-size: 1.05em;
+        padding: 13px;
+        margin: -18px -18px 13px -18px;
+    }
+    
+    .organizer-info {
+        font-size: 12px;
+    }
+    
+    .organizer-box img {
+        max-width: 100px;
+    }
+}
 
 /* Tablets and smaller laptops (up to 1024px) */
 @media (max-width: 1024px) {
@@ -611,29 +751,40 @@ table td:first-child {
     }
 }
 
+
 /* Tablets (up to 768px) */
-@media (max-width: 768px) {
+@media (max-width: 916px) {
     .header {
-        padding: 80px 15px 25px 15px;
+        padding: 6px;
         background: white;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
+    .header-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
     .header-content {
         background: #002147;
-        margin: 0 -15px -25px -15px;
+        margin: 0 -15px -15px -15px;
         padding: 30px 15px;
         width: calc(100% + 30px);
     }
     
     .header-logo {
-        display: block;
+        display: flex;
+        align-items: center;
     }
     
     .hamburger-header {
         display: flex;
+        align-items: center;
     }
     
     .hamburger-header span {
@@ -653,7 +804,10 @@ table td:first-child {
     }
     
     nav {
-        height: 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        height: auto;
         overflow: visible;
     }
     
@@ -667,7 +821,7 @@ table td:first-child {
         height: 100vh;
         background-color: #002147;
         box-shadow: -4px 0 6px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
+        z-index: 100000;
         transition: right 0.3s ease-in-out;
         overflow-y: auto;
         padding-top: 80px;
@@ -679,26 +833,6 @@ table td:first-child {
     
     .nav-bar li:first-child {
         margin-top: 20px;
-    }
-    
-    /* Overlay for when menu is open */
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-        z-index: 999;
-    }
-    
-    body.menu-open::before {
-        opacity: 1;
-        visibility: visible;
     }
     
     .container {
@@ -821,29 +955,11 @@ table td:first-child {
     }
 
     nav {
-        position: relative;
-        height: 0;
-        overflow: visible;
-    }
-    
-    /* Overlay for when menu is open */
-    body::before {
-        content: '';
-        position: fixed;
+        position: sticky;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-        z-index: 999;
-    }
-    
-    body.menu-open::before {
-        opacity: 1;
-        visibility: visible;
+        z-index: 100;
+        height: auto;
+        overflow: visible;
     }
     
     .header-logo img {
@@ -854,7 +970,7 @@ table td:first-child {
 /* Small mobile devices (up to 480px) */
 @media (max-width: 480px) {
     .header {
-        padding: 70px 10px 20px 10px;
+        padding: 5px;
         background: white;
         display: flex;
         flex-direction: column;
