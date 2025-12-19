@@ -79,27 +79,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Show home section by default on page load
 window.addEventListener('DOMContentLoaded', function() {
-    showSection('about');
-    // Set home link as active
-    const homeLink = document.querySelector('a[href="#about"]');
+    showSection('about-us');
+    // Set home link as active (only in nav-bar, not sidebar)
+    const homeLink = document.querySelector('.nav-bar a[href="#about"]');
     if (homeLink) {
         homeLink.classList.add('active');
     }
     
-    // VIT logo click handler - redirect to About Conference section
+    // VIT logo click handler - redirect to About Us section
     const vitLogo = document.querySelector('.header-logo');
     if (vitLogo) {
         vitLogo.style.cursor = 'pointer';
         vitLogo.addEventListener('click', function() {
-            showSection('about');
+            showSection('about-us');
             
             // Update active state
             document.querySelectorAll('.nav-bar a, .sidebar a').forEach(link => {
                 link.classList.remove('active');
             });
             
-            // Set "About the Conference" links as active
-            document.querySelectorAll('a[href="#about"]').forEach(link => {
+            // Set "About Us" links as active
+            document.querySelectorAll('a[href="#about-us"]').forEach(link => {
                 link.classList.add('active');
             });
             
