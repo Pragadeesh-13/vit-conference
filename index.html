@@ -1,845 +1,1399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ICGFG-2026</title>
-    
-    
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self';">
-    
-    <link rel="stylesheet" href="vit-styles.css">
-    <link rel="icon" href="./resources/vit_logo_head.jpg">
-</head>
-<body>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="geolocation=(), microphone=(), camera=()"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self';"
+    />
+
+    <link rel="stylesheet" href="vit-styles.css" />
+    <link rel="icon" href="./resources/vit_logo_head.jpg" />
+  </head>
+  <body>
     <div class="header">
-        <div class="header-top">
-            <div class="header-logo">
-                <img src="resources/vit_logo_coloured.png" alt="VIT Chennai Logo">
-            </div>
-            <button class="hamburger-header" id="hamburgerHeader" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <div class="header-top">
+        <div class="header-logo">
+          <img src="resources/vit_logo_coloured.png" alt="VIT Chennai Logo" />
         </div>
-        <div class="header-content">
-            <h1>International Conference on Graphs and Fuzzy Graphs</h1>
-            <h2>ICGFG-2026 (Hybrid Mode)</h2>
-            <h2>26<sup>th</sup> & 27<sup>th</sup> March 2026</h2>
-            <h2><span class="break-small">Vellore Institute of Technology, Chennai</span></h2>
-        </div>
+        <button class="hamburger-header" id="hamburgerHeader" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="header-content">
+        <h1>International Conference on Graphs and Fuzzy Graphs</h1>
+        <h2>ICGFG-2026 (Hybrid Mode)</h2>
+        <h2>26<sup>th</sup> & 27<sup>th</sup> March 2026</h2>
+        <h2>
+          <span class="break-small"
+            >Vellore Institute of Technology, Chennai</span
+          >
+        </h2>
+      </div>
     </div>
 
     <nav>
-        <ul class="nav-bar" id="navBar">
-            <li><a href="#about-us" class="active">Home</a></li>
-            <li><a href="#registration">Registration</a></li>
-            <li><a href="#guidelines">Guidelines</a></li>
-            <li><a href="#committee">Committee</a></li>
-            <li><a href="#venue">Venue</a></li>
-        </ul>
+      <ul class="nav-bar" id="navBar">
+        <li><a href="#about-us" class="active">Home</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#guidelines">Guidelines</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li><a href="#venue">Venue</a></li>
+      </ul>
     </nav>
 
     <div class="container">
-        <aside class="sidebar">
-            <h3>The Conference</h3>
-            <ul>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#about">About the Conference</a></li>
-                <li><a href="#committee">Committee</a></li>
-                <li><a href="#speakers">Invited Speakers</a></li>
-                <li><a href="#themes">Themes</a></li>
-                <li><a href="#deadlines">Important Deadlines</a></li>
-                <li><a href="#submission">Abstract Submission</a></li>
-                <li><a href="#publication">Publication of Papers</a></li>
-                <li><a href="#registration">Registration and Payment Details</a></li>
-                <li><a href="#contact">Contact Persons</a></li>
-            </ul>
-        </aside>
+      <aside class="sidebar">
+        <h3>The Conference</h3>
+        <ul>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#about">About the Conference</a></li>
+          <li><a href="#committee">Committee</a></li>
+          <li><a href="#speakers">Invited Speakers</a></li>
+          <li><a href="#themes">Themes</a></li>
+          <li><a href="#deadlines">Important Deadlines</a></li>
+          <li><a href="#submission">Abstract Submission</a></li>
+          <li><a href="#publication">Publication of Papers</a></li>
+          <li><a href="#registration">Registration and Payment Details</a></li>
+          <li><a href="#contact">Contact Persons</a></li>
+        </ul>
+      </aside>
 
-        <main class="main-content">
-            <section id="about-us">
-                <h2 style="color: #003366;">About Us</h2>
-                <div class="text-center mb-15">
-                    <img src="resources/vit.jpeg" alt="VIT Chennai" style="max-width: 100%; height: auto;">
-                </div>
-                <p class="text-primary">
-                    <strong>VIT Chennai</strong>, one of the <strong>leading engineering colleges in India</strong>, offers the best exposure in terms of <strong>world class education</strong>, <strong>internship opportunities</strong>, <strong>top-notch placement opportunities</strong>, and <strong>infrastructural amenities</strong>. We ensure that the graduates walk out with many skills and learning. We provide a domain for polishing <strong>technical mastery</strong> and <strong>interpretive and analytical skills</strong>, which is the need of the hour. <strong>VIT Chennai</strong>, fosters principles and ensures to achieve the mission and vision to enrich the learning process for the future leaders of our society.
-                </p>
-                <p class="text-primary">
-                    <strong>VIT</strong> was established in <strong>1984</strong> as a self-financing institution called the <strong>Vellore Engineering College</strong> under Section 3 of the University Grants Commission (UGC) Act, 1956. <strong>VIT Chennai</strong> was established in <strong>2010</strong> by <strong>Dr. G. Viswanathan</strong>, a former parliamentarian and a profound minister in Tamil Nadu Government. <strong>Mr. Sankar Viswanathan</strong>, <strong>Dr. Sekar Viswanathan</strong>, and <strong>Dr. G.V. Selvam</strong> are the Vice Presidents of our institute.
-                </p>
-                <p class="text-primary">
-                    <strong>VIT Chennai</strong>, the <strong>top engineering college in India</strong>, aims to provide a <strong>world-class education</strong> that imbibes strong ethical values in our students to gain a competitive edge over others. Our mission is to maintain an <strong>intellectually stimulating environment</strong> for students to learn professional ethics and push them out of their comfort zones to reach heights of success.
-                </p>
-                <p class="text-primary">
-                    <strong>VIT Chennai</strong> offers <strong>19 Undergraduate</strong>, <strong>18 Postgraduate</strong>, <strong>03 Integrated M. Tech</strong> and <strong>Research programmes</strong>. In addition, full-time <strong>PhD in Engineering and Management</strong> disciplines, <strong>PhD in Science and Languages</strong> and <strong>Integrated PhD programmes</strong> in engineering disciplines are offered. And several other Diploma courses in management, arts, engineering, and law. Hence, graduating from <strong>VIT Chennai</strong>: the <strong>best engineering college in Chennai</strong>, will promise you a bright future in the industry. The faculties have exceptional skills training students and years of experience in the field. They hold the perfect blend of knowledge, industry experience and research skills. We believe in fostering an environment that helps to brainstorm creative ideas and be the place where students find their voice.
-                </p>
-                <p class="text-primary">
-                    We offer an array of clubs that help to create a recreational space for students to display their talents and get involved with important causes. At present, there are <strong>70+ clubs</strong> present on campus. Here we present a few clubs that are as follows: <strong>National Entrepreneurship Network club</strong>, <strong>Youth Red cross club</strong>, <strong>Rotaract club</strong>, <strong>Robotics club</strong> and many more. The infrastructural amenities are top-notch and will continue to grow immensely in the upcoming years. The constant efforts make VIT the <strong>top engineering college in India</strong>.
-                </p>
-                <p class="text-primary">
-                    <a href="https://chennai.vit.ac.in/" target="_blank" rel="noopener noreferrer"><strong>Click here to learn more</strong></a>.
-                </p>
-                
-                <h3 class="mt-30">Placement opportunities and counselling</h3>
-                <p class="text-primary">
-                    We place students in <strong>top-notch reputed companies</strong> that offer wide exposure and equip them for their masters in the future. We have successfully placed <strong>1000+ candidates</strong> in top-notch companies. We hold the highest number of recruitments through placements and offer <strong>lucrative international internship opportunities</strong> as well. Here we present a list of the top recruiters that visit VIT Chennai for campus recruitment: <strong>Microsoft</strong>, <strong>Amazon</strong>, <strong>Infosys</strong>, <strong>Hero</strong>, <strong>ITC</strong> and <strong>Mahindra</strong>.
-                </p>
-                <p class="text-primary">
-                    We hope the above-listed information gives you details regarding several course attributes and placement opportunities. For more information, do visit our website and gain valuable insights.
-                </p>
-                
-                <h3 class="mt-30">About School of Advanced Science (SAS)</h3>
-                <p class="text-primary">
-                    The <strong>School of Advanced Sciences</strong> comprises three departments, namely, <strong>Physics</strong>, <strong>Chemistry</strong> and <strong>Mathematics</strong>. The school offers the following programmes: <strong>M. Sc. Data Science</strong>, <strong>M.Sc. Physics</strong> and <strong>M.Sc. Chemistry</strong>. The school offers courses catering to <strong>B.Tech</strong>, <strong>M.Tech</strong>, <strong>MCA</strong>, <strong>Business</strong>, <strong>Fashion design</strong> and <strong>Law programmes</strong>. The curriculum is developed on par with international standards, keeping in mind the current industrial needs. It is supported by <strong>state-of-the-art laboratories</strong> to provide hands-on experience on theoretical concepts discussed in the classroom. The unique combination of courses related to pure and applied sciences, offered by the school is intended to impart the necessary scientific knowledge to the future scientists and engineers. The faculty are engaged in active research in frontier areas.
-                </p>
-                <p class="text-primary">
-                    <a href="https://chennai.vit.ac.in/academics/schools/sas/" target="_blank" rel="noopener noreferrer"><strong>Click here to learn more</strong></a>.
-                </p>
+      <main class="main-content">
+        <section id="about-us">
+          <h2 style="color: #003366">About Us</h2>
+          <div class="text-center mb-15">
+            <img
+              src="resources/vit.jpeg"
+              alt="VIT Chennai"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+          <p class="text-primary">
+            <strong>VIT Chennai</strong>, one of the
+            <strong>leading engineering colleges in India</strong>, offers the
+            best exposure in terms of <strong>world class education</strong>,
+            <strong>internship opportunities</strong>,
+            <strong>top-notch placement opportunities</strong>, and
+            <strong>infrastructural amenities</strong>. We ensure that the
+            graduates walk out with many skills and learning. We provide a
+            domain for polishing <strong>technical mastery</strong> and
+            <strong>interpretive and analytical skills</strong>, which is the
+            need of the hour. <strong>VIT Chennai</strong>, fosters principles
+            and ensures to achieve the mission and vision to enrich the learning
+            process for the future leaders of our society.
+          </p>
+          <p class="text-primary">
+            <strong>VIT</strong> was established in <strong>1984</strong> as a
+            self-financing institution called the
+            <strong>Vellore Engineering College</strong> under Section 3 of the
+            University Grants Commission (UGC) Act, 1956.
+            <strong>VIT Chennai</strong> was established in
+            <strong>2010</strong> by <strong>Dr. G. Viswanathan</strong>, a
+            former parliamentarian and a profound minister in Tamil Nadu
+            Government. <strong>Mr. Sankar Viswanathan</strong>,
+            <strong>Dr. Sekar Viswanathan</strong>, and
+            <strong>Dr. G.V. Selvam</strong> are the Vice Presidents of our
+            institute.
+          </p>
+          <p class="text-primary">
+            <strong>VIT Chennai</strong>, the
+            <strong>top engineering college in India</strong>, aims to provide a
+            <strong>world-class education</strong> that imbibes strong ethical
+            values in our students to gain a competitive edge over others. Our
+            mission is to maintain an
+            <strong>intellectually stimulating environment</strong> for students
+            to learn professional ethics and push them out of their comfort
+            zones to reach heights of success.
+          </p>
+          <p class="text-primary">
+            <strong>VIT Chennai</strong> offers
+            <strong>19 Undergraduate</strong>, <strong>18 Postgraduate</strong>,
+            <strong>03 Integrated M. Tech</strong> and
+            <strong>Research programmes</strong>. In addition, full-time
+            <strong>PhD in Engineering and Management</strong> disciplines,
+            <strong>PhD in Science and Languages</strong> and
+            <strong>Integrated PhD programmes</strong> in engineering
+            disciplines are offered. And several other Diploma courses in
+            management, arts, engineering, and law. Hence, graduating from
+            <strong>VIT Chennai</strong>: the
+            <strong>best engineering college in Chennai</strong>, will promise
+            you a bright future in the industry. The faculties have exceptional
+            skills training students and years of experience in the field. They
+            hold the perfect blend of knowledge, industry experience and
+            research skills. We believe in fostering an environment that helps
+            to brainstorm creative ideas and be the place where students find
+            their voice.
+          </p>
+          <p class="text-primary">
+            We offer an array of clubs that help to create a recreational space
+            for students to display their talents and get involved with
+            important causes. At present, there are
+            <strong>70+ clubs</strong> present on campus. Here we present a few
+            clubs that are as follows:
+            <strong>National Entrepreneurship Network club</strong>,
+            <strong>Youth Red cross club</strong>,
+            <strong>Rotaract club</strong>, <strong>Robotics club</strong> and
+            many more. The infrastructural amenities are top-notch and will
+            continue to grow immensely in the upcoming years. The constant
+            efforts make VIT the
+            <strong>top engineering college in India</strong>.
+          </p>
+          <p class="text-primary">
+            <a
+              href="https://chennai.vit.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Click here to learn more</strong></a
+            >.
+          </p>
 
-                <h3 class="mt-30"><u>About Vidyasagar University</u></h3>
-                <div class="text-center mb-15">
-                    <img src="resources/vidya_sagar_logo.jpg" alt="Vidyasagar University" style="max-width: 100%; height: auto;">
-                </div>
-                <p class="text-primary">
-                    <strong>Vidyasagar University</strong>, established in <strong>1981</strong> by the Government of West Bengal and named after the eminent educationist and social reformer <strong>Pandit Ishwar Chandra Vidyasagar</strong>, is a leading public university committed to academic excellence, inclusivity, and social transformation. Located in <strong>Midnapore town, Paschim Medinipur, West Bengal</strong>, the University serves a diverse student population, with a strong focus on learners from rural, tribal, and economically disadvantaged backgrounds. The University comprises <strong>33 academic departments</strong> and offers <strong>36 postgraduate programmes</strong> and <strong>27 Ph.D. programmes</strong> across Arts, Science, Commerce, Management, and interdisciplinary studies, with curricula aligned to the National Education Policy, including the Multiple Entry and Exit system, promotion of Indian languages, and integration of the Indian Knowledge System. As an affiliating university, Vidyasagar University plays a pivotal role in strengthening higher education across the region while maintaining rigorous academic standards.
-                </p>
-                <p class="text-primary">
-                    The University has developed a <strong>robust research and innovation ecosystem</strong>, hosting over <strong>750 Ph.D. scholars</strong> (full-time and part-time) and awarding more than <strong>350 doctoral degrees</strong> in the last three years. Faculty members and researchers actively engage in sponsored research, consultancy, and patent-driven innovation, with <strong>50 funded research projects</strong> in 2023–24 alone. Continuous investment in modern infrastructure—including advanced laboratories, libraries, engineering workshops, ICT-enabled classrooms, and research facilities—is supported by an annual operational expenditure exceeding <strong>₹47 crore</strong>. Accredited by <strong>NAAC</strong> with validity up to 2026, the University has also earned national recognition, being placed in the <strong>151–200 band</strong> in the NIRF Overall category and in the <strong>51–100 band</strong> among State Public Universities.
-                </p>
-                <p class="text-primary">
-                    Committed to sustainability and inclusivity, over <strong>80% of campus buildings</strong> are equipped with ramps and lifts, alongside initiatives such as solar energy utilization, rainwater harvesting, plastic-free practices, and green campus policies. With its learner-centric academic environment, experienced faculty, vibrant campus life, and emphasis on research, employability, and ethical values, <strong>Vidyasagar University</strong> continues to nurture confident, skilled, and socially responsible graduates prepared to contribute meaningfully at national and global levels.
-                </p>
-                <p class="text-primary">
-                    <a href="https://www.vidyasagar.ac.in/" target="_blank" rel="noopener noreferrer"><strong>Click here to learn more</strong></a>.
-                </p>
-            </section>
+          <h3 class="mt-30">Placement opportunities and counselling</h3>
+          <p class="text-primary">
+            We place students in
+            <strong>top-notch reputed companies</strong> that offer wide
+            exposure and equip them for their masters in the future. We have
+            successfully placed <strong>1000+ candidates</strong> in top-notch
+            companies. We hold the highest number of recruitments through
+            placements and offer
+            <strong>lucrative international internship opportunities</strong> as
+            well. Here we present a list of the top recruiters that visit VIT
+            Chennai for campus recruitment: <strong>Microsoft</strong>,
+            <strong>Amazon</strong>, <strong>Infosys</strong>,
+            <strong>Hero</strong>, <strong>ITC</strong> and
+            <strong>Mahindra</strong>.
+          </p>
+          <p class="text-primary">
+            We hope the above-listed information gives you details regarding
+            several course attributes and placement opportunities. For more
+            information, do visit our website and gain valuable insights.
+          </p>
 
-            <section id="about">
-                <h2 style="color: #003366;">About the Conference</h2>
-                <p class="text-primary">
-                    The School of Advanced Sciences, <strong class="text-bold-black">Vellore Institute of Technology (VIT), Chennai</strong>, in collaboration with the <strong class="text-bold-black">Department of Applied Mathematics, Vidyasagar University</strong>, is pleased to organize the <strong class="text-bold-black">International Conference on Graphs and Fuzzy Graphs (ICGFG-2026)</strong> to commemorate the <strong class="text-bold-black">50<sup>th</sup> Anniversary of Fuzzy Graph Theory (1975–2025)</strong>. The conference will be coordinated by the <strong class="text-bold-black">Sridharacharya Academy of Mathematical Sciences (SAAMS)</strong>.
-                </p>
-                <p class="text-primary">
-                    Graph theory, a fundamental branch of Mathematics, has extensive applications across diverse areas of science and technology, including computer networks, communication systems, biological modeling, and social network analysis. After the introduction of Fuzzy logic by Lotfi A. Zadeh in 1965, it was also applied to graph theory, to model real-world problems more sensibly. Since the inception of Fuzzy graphs in 1975, this field has evolved rapidly, offering powerful tools to model uncertainty and complexity in real-world systems.
-                </p>
-                <p class="text-primary">
-                    The conference aims to bring together eminent academicians, researchers, and professionals from across the globe to exchange ideas and present recent advancements in Graph theory, Fuzzy set theory, Fuzzy graphs, and their interdisciplinary applications. It will feature keynote lectures, invited talks, technical sessions, and discussions focused on theoretical developments and practical implementations in areas such as optimization, artificial intelligence, data science, and decision-making.
-                </p>
-                <p class="text-primary">
-                    The conference will be held at <strong class="text-bold-black">VIT Chennai Campus</strong>, providing an excellent platform for collaboration, innovation, and the advancement of Mathematical sciences.
-                </p>
-            </section>
+          <h3 class="mt-30">About School of Advanced Science (SAS)</h3>
+          <p class="text-primary">
+            The <strong>School of Advanced Sciences</strong> comprises three
+            departments, namely, <strong>Physics</strong>,
+            <strong>Chemistry</strong> and <strong>Mathematics</strong>. The
+            school offers the following programmes:
+            <strong>M. Sc. Data Science</strong>,
+            <strong>M.Sc. Physics</strong> and <strong>M.Sc. Chemistry</strong>.
+            The school offers courses catering to <strong>B.Tech</strong>,
+            <strong>M.Tech</strong>, <strong>MCA</strong>,
+            <strong>Business</strong>, <strong>Fashion design</strong> and
+            <strong>Law programmes</strong>. The curriculum is developed on par
+            with international standards, keeping in mind the current industrial
+            needs. It is supported by
+            <strong>state-of-the-art laboratories</strong> to provide hands-on
+            experience on theoretical concepts discussed in the classroom. The
+            unique combination of courses related to pure and applied sciences,
+            offered by the school is intended to impart the necessary scientific
+            knowledge to the future scientists and engineers. The faculty are
+            engaged in active research in frontier areas.
+          </p>
+          <p class="text-primary">
+            <a
+              href="https://chennai.vit.ac.in/academics/schools/sas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Click here to learn more</strong></a
+            >.
+          </p>
 
-            <section id="committee">
-                <h2 style="color: #003366;">Academic Programming Committee</h2>
-                
-                <h3 style="text-decoration: underline; color: #B8860B; color: #B8860B;">Chief Patron:</h3>
-                <p>
-                    <strong style="color: #0056b3;">Dr. G. Viswanathan</strong><br>
-                    <span style="color: #444444;">Founder & Chancellor<br>
-                    Vellore Institute of Technology</span>
-                </p>
-                
-                <h3 style="text-decoration: underline; color: #B8860B; color: #B8860B;">Patrons:</h3>
-                <div>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Mr. Sankar Viswanathan</strong><br>
-                        <span style="color: #444444;">Vice President<br>
-                        Vellore Institute of Technology</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sekar Viswanathan</strong><br>
-                        <span style="color: #444444;">Vice President<br>
-                        Vellore Institute of Technology</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. G. V. Selvam</strong><br>
-                        <span style="color: #444444;">Vice President<br>
-                        Vellore Institute of Technology</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. V. S. Kanchana Bhaaskaran</strong><br>
-                        <span style="color: #444444;">Vice Chancellor<br>
-                        Vellore Institute of Technology</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Dipak Kumar Kar</strong><br>
-                        <span style="color: #444444;">Vice Chancellor<br>
-                        Vidyasagar University</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. T. Thyagarajan</strong><br>
-                        <span style="color: #444444;">Pro Vice Chancellor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. K. Sathiyanarayanan</strong><br>
-                        <span style="color: #444444;">Director<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. P. K. Manoharan</strong><br>
-                        <span style="color: #444444;">Additional Registrar<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                </div>
-                
-                <h3 class="mt-30" style="text-decoration: underline; color: #003366; color: #003366;">Organizing Committee:</h3>
-                
-                <h4 class="mt-20" style="text-decoration: underline; color: #B8860B;">Convenors:</h4>
-                <div>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Balamurugan B J</strong><br>
-                        <span style="color: #444444;">Associate Professor Senior<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Madhumangal Pal</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vidyasagar University, West Bengal</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Prof. Sk Md Abu Nayeem</strong><br>
-                        <span style="color: #444444;">General Secretary<br>
-                        Sridharacharya Academy of Mathematical Sciences</span>
-                    </p>
-                </div>
-                
-                <h4 class="mt-20" style="text-decoration: underline; color: #B8860B; color: #B8860B;">Co-Convenors:</h4>
-                <div>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Prabhakar V</strong><br>
-                        <span style="color: #444444;">Professor<br> School of Advanced Sciences<br> Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Balaji S</strong><br>
-                        <span style="color: #444444;">Assistant Professor<br>
-                        School of Advanced Sciences<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Jayagopal R</strong><br>
-                        <span style="color: #444444;">Assistant Professor<br>
-                        School of Advanced Sciences<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Pavithra R</strong><br>
-                        <span style="color: #444444;">Assistant Professor<br>
-                        School of Advanced Sciences<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Prof. Ajay Kumar Misra</strong><br>
-                        <span style="color: #444444;">Director, R&D Cell<br>
-                        Vidyasagar University, West Bengal</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sukumar Mondal</strong><br>
-                        <span style="color: #444444;">Raja N.L. Khan Women's College<br>
-                        Vidyasagar University, West Bengal</span> <br>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Anita Pal</strong><br>
-                        <span style="color: #444444;">NIT Durgapur<br>
-                        Vice President of Sridharacharya Academy of Mathematical Sciences</span>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Monoranjan Bhowmik</strong><br>
-                        <span style="color: #444444;">Principal<br>Vidyasagar Teacher Training College<br>
-                        Vice President of Sridharacharya Academy of Mathematical Sciences</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sk Amanathulla</strong><br>
-                        <span style="color: #444444;">Raghunathpur College<br>
-                        Treasurer of Sridharacharya Academy of Mathematical Sciences</span>
-                    </p>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sovan Samanta</strong><br>
-                        <span style="color: #444444;">Tamralipta Mahavidyalaya<br>
-                        Vidyasagar University<br>
-                        Editorial Secretary of Sridharacharya Academy of Mathematical Sciences</span>
-                    </p>
-                </div>
-                
-                <h4 class="mt-20" style="text-decoration: underline; color: #B8860B; color: #B8860B;">Members:</h4>
-                <p style="color: #444444;">
-                    All faculty members and research scholars from the Department of Mathematics, Vellore Institute of Technology, Chennai
-                </p>
-                
-                <h3 class="mt-30" style="text-decoration: underline; color: #003366;">Advisory Committee:</h3>
-                <div>
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Subramanian K G</strong><br>
-                        <span style="color: #444444;">Visiting Professor<br>
-                        Liverpool Hope University, UK</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Atulya Nagar</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Liverpool Hope University, UK</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Srini Ramaswamy</strong><br>
-                        <span style="color: #444444;">IEEE & ACM Senior Member<br>
-                        SMARt Autonomy Framework, USA</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Benoit Rittaud</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Sorbonne Paris Nord University, France</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sanjeewa Perera</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        University of Colombo, Sri Lanka</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Gnanaraj Thomas</strong><br>
-                        <span style="color: #444444;">Former Professor<br>
-                        Madras Christian College, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Gnanamalar David</strong><br>
-                        <span style="color: #444444;">Visiting Professor<br>
-                        Liverpool Hope University, UK</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Thirusangu K</strong><br>
-                        <span style="color: #444444;">Former Principal, Professor<br>
-                        S.I.V.E.T College, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. D. Arivudainambi</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Anna University, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sankar K</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Anna University, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Shalu M A</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        IIITDM, Kancheepuram</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sadagopan N</strong><br>
-                        <span style="color: #444444;">Associate Professor<br>
-                        IIITDM, Kancheepuram</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sathishkumar A</strong><br>
-                        <span style="color: #444444;">Associate Professor<br>
-                        IIT Madras</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Sivaraman R</strong><br>
-                        <span style="color: #444444;">Associate Professor<br>
-                        Dwaraka Doss Goverdhan Doss Vaishnav College, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Padmapriya N</strong><br>
-                        <span style="color: #444444;">Associate Professor<br>
-                        SSN College of Engineering, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Micheal Arockiaraj</strong><br>
-                        <span style="color: #444444;">Associate Professor<br>
-                        Loyola College, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. B. Krishna Kumar</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. N. Sukavanam</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Kalyani Desikan</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Kaliyappan M</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Mini Ghosh</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Muthunagai</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. David Maxim Gururaj A</strong><br>
-                        <span style="color: #444444;">Professor<br>
-                        Vellore Institute of Technology, Chennai</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Kaliraj K</strong><br>
-                        <span style="color: #444444;">Assistant Professor<br>
-                        Ramanujan Institute for Advanced Study in Mathematics<br>
-                        University of Madras</span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. S. Kayalvizhi</strong><br>
-                        <span style="color: #444444;">Assistant Professor<br>
-                        NIT Tirchy</span>
-                    </p>
-                </div>
-            </section>
+          <h3 class="mt-30"><u>About Vidyasagar University</u></h3>
+          <div class="text-center mb-15">
+            <img
+              src="resources/vidya_sagar_logo.jpg"
+              alt="Vidyasagar University"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+          <p class="text-primary">
+            <strong>Vidyasagar University</strong>, established in
+            <strong>1981</strong> by the Government of West Bengal and named
+            after the eminent educationist and social reformer
+            <strong>Pandit Ishwar Chandra Vidyasagar</strong>, is a leading
+            public university committed to academic excellence, inclusivity, and
+            social transformation. Located in
+            <strong>Midnapore town, Paschim Medinipur, West Bengal</strong>, the
+            University serves a diverse student population, with a strong focus
+            on learners from rural, tribal, and economically disadvantaged
+            backgrounds. The University comprises
+            <strong>33 academic departments</strong> and offers
+            <strong>36 postgraduate programmes</strong> and
+            <strong>27 Ph.D. programmes</strong> across Arts, Science, Commerce,
+            Management, and interdisciplinary studies, with curricula aligned to
+            the National Education Policy, including the Multiple Entry and Exit
+            system, promotion of Indian languages, and integration of the Indian
+            Knowledge System. As an affiliating university, Vidyasagar
+            University plays a pivotal role in strengthening higher education
+            across the region while maintaining rigorous academic standards.
+          </p>
+          <p class="text-primary">
+            The University has developed a
+            <strong>robust research and innovation ecosystem</strong>, hosting
+            over <strong>750 Ph.D. scholars</strong> (full-time and part-time)
+            and awarding more than <strong>350 doctoral degrees</strong> in the
+            last three years. Faculty members and researchers actively engage in
+            sponsored research, consultancy, and patent-driven innovation, with
+            <strong>50 funded research projects</strong> in 2023–24 alone.
+            Continuous investment in modern infrastructure including advanced
+            laboratories, libraries, engineering workshops, ICT-enabled
+            classrooms, and research facilities is supported by an annual
+            operational expenditure exceeding <strong>₹47 crore</strong>.
+            Accredited by <strong>NAAC</strong> with validity up to 2026, the
+            University has also earned national recognition, being placed in the
+            <strong>151–200 band</strong> in the NIRF Overall category and in
+            the <strong>51–100 band</strong> among State Public Universities.
+          </p>
+          <p class="text-primary">
+            Committed to sustainability and inclusivity, over
+            <strong>80% of campus buildings</strong> are equipped with ramps and
+            lifts, alongside initiatives such as solar energy utilization,
+            rainwater harvesting, plastic-free practices, and green campus
+            policies. With its learner-centric academic environment, experienced
+            faculty, vibrant campus life, and emphasis on research,
+            employability, and ethical values,
+            <strong>Vidyasagar University</strong> continues to nurture
+            confident, skilled, and socially responsible graduates prepared to
+            contribute meaningfully at national and global levels.
+          </p>
+          <p class="text-primary">
+            <a
+              href="https://www.vidyasagar.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Click here to learn more</strong></a
+            >.
+          </p>
+        </section>
 
-            <section id="guidelines">
-                <h2 style="color: #003366;">Guidelines</h2>
-                <p class="text-primary">
-                    Guidelines for abstract and paper submission will be announced soon.
-                </p>
-                <h3>Abstract Preparation</h3>
-                <p class="text-primary">
-                    Abstracts should be prepared according to the provided template in MS Word format only.
-                </p>
-                <h3>Paper Format</h3>
-                <p class="text-primary">
-                    Full papers must follow the conference formatting guidelines and should not exceed the specified page limit.
-                </p>
-            </section>
+        <section id="about">
+          <h2 style="color: #003366">About the Conference</h2>
+          <p class="text-primary">
+            The
+            <strong class="text-bold-black"
+              >School of Advanced Sciences (SAS)</strong
+            >
+            at <strong class="text-bold-black">VIT Chennai</strong>, in
+            prestigious collaboration with the
+            <strong class="text-bold-black"
+              >Department of Applied Mathematics at Vidyasagar
+              University</strong
+            >, is proud to organize the
+            <strong class="text-bold-black"
+              >International Conference on Graphs and Fuzzy Graphs
+              (ICGFG-2026)</strong
+            >
+            in coordination with the
+            <strong class="text-bold-black"
+              >Sridharacharya Academy of Mathematical Sciences (SAAMS)</strong
+            >. This landmark event commemorates the
+            <strong class="text-bold-black"
+              >50<sup>th</sup> Anniversary of Fuzzy Graph Theory
+              (1975–2025)</strong
+            >. ICGFG-2026 aims to provide a premier global stage for
+            researchers, academicians, and practitioners to exchange pioneering
+            ideas and discuss the latest breakthroughs in graph theory, fuzzy
+            sets, and fuzzy graphs.
+          </p>
 
-            <section id="venue">
-                <h2 style="color: #003366;">Venue</h2>
-                <h3>VIT Chennai Campus</h3>
-                <p class="text-secondary">
-                    <strong>Vellore Institute of Technology</strong><br>
-                    School of Advanced Sciences<br>
-                    VIT Chennai Campus<br>
-                    Chennai, Tamil Nadu, India
-                </p>
-                <h3>How to Reach</h3>
-                <p class="text-secondary">
-                    VIT Chennai is easily accessible from Chennai International Airport and major railway stations. Detailed directions will be provided to registered participants.
-                </p>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.040939448087!2d80.15073452683751!3d12.84063106773255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259af8e491f67%3A0x944b42131b757d2d!2sVellore%20Institute%20of%20Technology%20-%20Chennai!5e0!3m2!1sen!2sin!4v1765994497913!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <h3 class="mt-30">Accommodation:</h3>
-                <p class="text-primary">
-                    Accommodation for participants will be arranged on a payment basis within the campus, on a first-come, first-served basis, if required. Payment details will be provided later.
-                </p>
-                <p class="text-primary" style="font-weight: bold;">
-                    No additional persons are allowed to accompany the registered participant in the hostel.
-                </p>
-                
-            </section>
+          <h3 class="mt-30" style="color: #000000; font-weight: bold">
+            A Platform for Innovation
+          </h3>
+          <p class="text-primary">
+            ICGFG-2026 serves as a dynamic forum for exploring theoretical
+            advancements and emerging practical applications. The conference
+            highlights the intersection of mathematical theory with modern
+            technology, focusing on fields such as:
+          </p>
+          <ul class="text-primary">
+            <li>Artificial Intelligence & Data Science</li>
+            <li>Optimization & Communication Networks</li>
+            <li>Decision-Making Systems</li>
+          </ul>
+          <p class="text-primary">
+            Hosted at the vibrant
+            <strong class="text-bold-black">VIT Chennai Campus</strong>, the
+            event will feature a comprehensive program including keynote
+            lectures, invited talks, and technical sessions presented by leading
+            global experts.
+          </p>
+          <p class="text-primary">
+            The conference focuses on, but is not limited to:
+          </p>
+          <ul class="text-primary">
+            <li>Graph Theory</li>
+            <li>Fuzzy Set Theory</li>
+            <li>Fuzzy Graphs and Applications</li>
+            <li>Algorithms and Optimization</li>
+            <li>Artificial Intelligence and Data Science</li>
+            <li>Network Science and Communication Systems</li>
+            <li>Decision-Making Models and Soft Computing Techniques</li>
+          </ul>
 
-            <section id="themes">
-                <h2 style="color: #003366;">Themes</h2>
-                <ul class="text-primary line-height-18">
-                    <li><strong>Graph theory</strong></li>
-                    <li><strong>Algebraic Graph Theory</strong></li>
-                    <li><strong>Spectral graph theory</strong></li>
-                    <li><strong>Graph theory in communication and sensor networks</strong></li>
-                    <li><strong>Fuzzy graph models for decision-making systems</strong></li>
-                    <li><strong>Graph-based optimization in smart farming and IoT</strong></li>
-                    <li><strong>Applications of Fuzzy graphs in engineering systems</strong></li>
-                    <li><strong>Graph theory in data science and network analytics</strong></li>
-                    <li><strong>Uncertainty modeling using Fuzzy and hybrid graphs</strong></li>
-                    <li><strong>Graph-theoretic approaches in machine learning</strong></li>
-                    <li><strong>Network reliability and security using graph models</strong></li>
-                    <li><strong>Graph theory in biological and healthcare systems</strong></li>
-                    <li><strong>Fuzzy graph applications in transportation and logistics</strong></li>
-                    <li><strong>Graph-based modeling for energy-efficient networks</strong></li>
-                    <li><strong>Applications of graph theory in social and economic networks</strong></li>
+          <h3 class="mt-30" style="color: #000000; font-weight: bold">
+            Who Can Attend?
+          </h3>
+          <p class="text-primary">
+            ICGFG-2026 is an inclusive platform designed for anyone involved in
+            the mathematical and computational sciences:
+          </p>
+          <div class="text-primary">
+            <p style="margin: 10px 0">
+              ✓<strong>Academicians & Faculty:</strong> To share pedagogical
+              insights and research breakthroughs.
+            </p>
+            <p style="margin: 10px 0">
+              ✓ <strong>Research Scholars (PhD/Post-doc):</strong> To present
+              their work and expand their professional network.
+            </p>
+            <p style="margin: 10px 0">
+              ✓ <strong>Postgraduate Students:</strong> To learn about emerging
+              trends and identify potential research areas.
+            </p>
+            <p style="margin: 10px 0">
+              ✓ <strong>Industry Professionals:</strong> To explore how fuzzy
+              graph models can be applied to optimization, logistics, and AI
+              systems.
+            </p>
+            <p style="margin: 10px 0">
+              ✓ <strong>Data Scientists & Engineers:</strong> To leverage
+              graph-based algorithms for complex network analysis.
+            </p>
+          </div>
+        </section>
 
+        <section id="committee">
+          <h2 style="color: #003366">Academic Programming Committee</h2>
 
-                </ul>
-            </section>
+          <h3
+            style="text-decoration: underline; color: #b8860b; color: #b8860b"
+          >
+            Chief Patron:
+          </h3>
+          <p>
+            <strong style="color: #0056b3">Dr. G. Viswanathan</strong><br />
+            <span style="color: #444444"
+              >Founder & Chancellor<br />
+              Vellore Institute of Technology</span
+            >
+          </p>
 
-            <section id="speakers">
-                <h2 style="color: #003366;">Eminent Speakers</h2>
-                
-                <h3 class="mt-30" style="color: #B8860B;"><u>International Speakers:</u></h3>
+          <h3
+            style="text-decoration: underline; color: #b8860b; color: #b8860b"
+          >
+            Patrons:
+          </h3>
+          <div>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Mr. Sankar Viswanathan</strong
+              ><br />
+              <span style="color: #444444"
+                >Vice President<br />
+                Vellore Institute of Technology</span
+              >
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/ispeaker-4.jpg" alt="Prof. Douglas B. West">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Prof. Douglas B. West</h4>
-                        <p style="color: #444444;">Professor Emeritus<br>Department of Mathematics<br>University of Illinois</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sekar Viswanathan</strong
+              ><br />
+              <span style="color: #444444"
+                >Vice President<br />
+                Vellore Institute of Technology</span
+              >
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/ispeaker-5.png" alt="Dr. Srini Ramaswamy">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Dr. Srini Ramaswamy</h4>
-                        <p style="color: #444444;">Former Professor & Department Chair<br>Global R&D Leader, USA</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. G. V. Selvam</strong><br />
+              <span style="color: #444444"
+                >Vice President<br />
+                Vellore Institute of Technology</span
+              >
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/ispeaker-1.jpg" alt="Prof. Ayman Badawi">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Prof. Ayman Badawi</h4>
-                        <p style="color: #444444;">Professor<br>Department of Mathematics<br>American University of Sharjah, UAE</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+            <p class="mb-15">
+              <strong style="color: #0056b3"
+                >Dr. V. S. Kanchana Bhaaskaran</strong
+              ><br />
+              <span style="color: #444444"
+                >Vice Chancellor<br />
+                Vellore Institute of Technology</span
+              >
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/ispeaker-2.jpg" alt="Prof. Kinkar Das">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Prof. Kinkar Das</h4>
-                        <p style="color: #444444;">Professor<br>Department of Mathematics<br>Sungkyunkwan University (SKKU), South Korea</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Dipak Kumar Kar</strong><br />
+              <span style="color: #444444"
+                >Vice Chancellor<br />
+                Vidyasagar University</span
+              >
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/ispeaker-3.jpg" alt="Dr. Milica Anđelić">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Dr. Milica Anđelić</h4>
-                        <p style="color: #444444;">Associate Professor<br>Department of Mathematics<br>Kuwait University</p>
-                    </div>
-                </div>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. T. Thyagarajan</strong><br />
+              <span style="color: #444444"
+                >Pro Vice Chancellor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
 
-                <h3 class="mt-40" style="color: #B8860B;" style="color: #B8860B;"><u>Indian Speakers:</u></h3>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. K. Sathiyanarayanan</strong
+              ><br />
+              <span style="color: #444444"
+                >Director<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/speaker-2.jpg" alt="Dr. S. Arumugam">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Dr. S. Arumugam</h4>
-                        <p style="color: #444444;">Senior Professor (Research)<br>Kalasalingam Academy of Research and Education<br>Kalasalingam University, India</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. P. K. Manoharan</strong><br />
+              <span style="color: #444444"
+                >Additional Registrar<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+          </div>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/speaker-6.png" alt="Prof. R Balakrishnan">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Prof. R Balakrishnan</h4>
-                        <p style="color: #444444;">Adjunct Professor<br>Department of Mathematics<br>Bharathidasan University, Tamilnadu</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+          <h3
+            class="mt-30"
+            style="text-decoration: underline; color: #003366; color: #003366"
+          >
+            Organizing Committee:
+          </h3>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/speaker-1.jpg" alt="Dr. Indra Rajasingh">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Dr. Indra Rajasingh</h4>
-                        <p style="color: #444444;">Former Professor<br>VIT University, Chennai</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+          <h4 class="mt-20" style="text-decoration: underline; color: #b8860b">
+            Convenors:
+          </h4>
+          <div>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Balamurugan B J</strong><br />
+              <span style="color: #444444"
+                >Associate Professor Senior<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Madhumangal Pal</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vidyasagar University, West Bengal</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Prof. Sk Md Abu Nayeem</strong
+              ><br />
+              <span style="color: #444444"
+                >General Secretary<br />
+                Sridharacharya Academy of Mathematical Sciences</span
+              >
+            </p>
+          </div>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/speaker-5.png" alt="Prof. Ankur Bharali">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Prof. Ankur Bharali</h4>
-                        <p style="color: #444444;">Professor<br>Department of Mathematics<br>Director of IQAC, Director(Hon.) of CIQA, CDOE<br>Dibrugarh University, Assam</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+          <h4
+            class="mt-20"
+            style="text-decoration: underline; color: #b8860b; color: #b8860b"
+          >
+            Co-Convenors:
+          </h4>
+          <div>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Prabhakar V</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                School of Advanced Sciences<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Balaji S</strong><br />
+              <span style="color: #444444"
+                >Assistant Professor<br />
+                School of Advanced Sciences<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Jayagopal R</strong><br />
+              <span style="color: #444444"
+                >Assistant Professor<br />
+                School of Advanced Sciences<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Pavithra R</strong><br />
+              <span style="color: #444444"
+                >Assistant Professor<br />
+                School of Advanced Sciences<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Prof. Ajay Kumar Misra</strong
+              ><br />
+              <span style="color: #444444"
+                >Director, R&D Cell<br />
+                Vidyasagar University, West Bengal</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sukumar Mondal</strong><br />
+              <span style="color: #444444"
+                >Raja N.L. Khan Women's College<br />
+                Vidyasagar University, West Bengal</span
+              >
+              <br />
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/speaker-7.jpg" alt="Prof. Shalu M A">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Prof. Shalu M A</h4>
-                        <p style="color: #444444;">Professor in Mathematics<br>IIITDM, Kancheepuram, India</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Anita Pal</strong><br />
+              <span style="color: #444444"
+                >NIT Durgapur<br />
+                Vice President of Sridharacharya Academy of Mathematical
+                Sciences</span
+              >
+            </p>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/speaker-3.jpg" alt="Dr. Sunil Mathew">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Dr. Sunil Mathew</h4>
-                        <p style="color: #444444;">Associate Professor<br>Department of Mathematics<br>National Institute of Technology Calicut<br>Kerala, India</p>
-                    </div>
-                </div>
-                <hr class="speaker-divider">
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Monoranjan Bhowmik</strong
+              ><br />
+              <span style="color: #444444"
+                >Principal<br />Vidyasagar Teacher Training College<br />
+                Vice President of Sridharacharya Academy of Mathematical
+                Sciences</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sk Amanathulla</strong><br />
+              <span style="color: #444444"
+                >Raghunathpur College<br />
+                Treasurer of Sridharacharya Academy of Mathematical
+                Sciences</span
+              >
+            </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sovan Samanta</strong><br />
+              <span style="color: #444444"
+                >Tamralipta Mahavidyalaya<br />
+                Vidyasagar University<br />
+                Editorial Secretary of Sridharacharya Academy of Mathematical
+                Sciences</span
+              >
+            </p>
+          </div>
 
-                <div class="speaker-item">
-                    <div class="speaker-photo">
-                        <img src="resources/speaker-4.jpg" alt="Dr. Anita Pal">
-                    </div>
-                    <div class="speaker-info">
-                        <h4 style="color: #0056b3;">Dr. Anita Pal</h4>
-                        <p style="color: #444444;">Associate Professor<br>Department of Mathematics<br>National Institute of Technology Durgapur</p>
-                    </div>
-                </div>
-            </section>
+          <h4
+            class="mt-20"
+            style="text-decoration: underline; color: #b8860b; color: #b8860b"
+          >
+            Members:
+          </h4>
+          <p style="color: #444444">
+            All faculty members and research scholars from the Department of
+            Mathematics, Vellore Institute of Technology, Chennai
+          </p>
 
-            <section id="deadlines">
-                <h2 style="color: #003366;">Important Dates</h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Last Date For Abstract Submission:</td>
-                            <td class="text-primary">21<sup>st</sup> February 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Abstract Acceptance Status:</td>
-                            <td class="text-primary">23<sup>rd</sup> February 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Full Paper Submission <i><span style="font-size: 14px;">(After Completion of Conference)</span></i></td>
-                            <td class="text-primary">15<sup>th</sup> April 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Registration For Participation:</td>
-                            <td class="text-primary">13<sup>th</sup> March 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Conference Dates:</td>
-                            <td class="text-primary">26 – 27 March 2026</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+          <h3 class="mt-30" style="text-decoration: underline; color: #003366">
+            Advisory Committee:
+          </h3>
+          <div>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Subramanian K G</strong><br />
+              <span style="color: #444444"
+                >Visiting Professor<br />
+                Liverpool Hope University, UK</span
+              >
+            </p>
 
-            <section id="submission">
-                <h2 style="color: #003366;">Abstract Submission</h2>
-                <p class="text-primary">
-                    At least one author of the accepted abstract must register and present the paper in the conference, either in Virtual mode or Physical mode. Otherwise, the paper will not be processed further for publication.
-                </p>
-                <ul class="text-primary line-height-18">
-                    <li>
-                        If presenting a paper, submit your abstract at the link given below:<br>
-                        <a href="https://docs.google.com/forms/d/1E71zf_9TWL-t_JQZTiLMsF7YYavMKQh0GIfd_lWTJEk/edit" target="_blank" rel="noopener noreferrer"><strong>Abstract Submission Form</strong></a>
-                    </li>
-                    <li>
-                        Download the abstract template to prepare your submission:<br>
-                        <a href="resources/Abstract Template.docx" download><strong>Abstract Template.docx</strong></a>
-                    </li>
-                    <li>
-                        For Registration, submit the <a href="https://docs.google.com/forms/d/1dayrDlUSsX2_zsnIKOu8qb7UkR66ZpAQgje2KJu3qXQ/edit" target="_blank" rel="noopener noreferrer"><strong>Registration Form</strong></a> and check <a href="#registration"><strong>Registration section</strong></a> for further details.
-                    </li>
-                </ul>
-            </section>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Atulya Nagar</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Liverpool Hope University, UK</span
+              >
+            </p>
 
-            <section id="publication">
-                <h2 style="color: #003366;">Publication of Papers</h2>
-                <p class="text-primary">
-                    Accepted and presented papers will undergo peer review and will be considered for publication in a Scopus-indexed journal or book series. Details will be announced during the conference. Additional charges are applicable based on the publication platform.
-                </p>
-            </section>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Srini Ramaswamy</strong><br />
+              <span style="color: #444444"
+                >IEEE & ACM Senior Member<br />
+                SMARt Autonomy Framework, USA</span
+              >
+            </p>
 
-            <section id="registration">
-                <h2 style="color: #003366;">Registration</h2>
-                
-                <h3 class="mt-20">Registration Fees:</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Paper Presentation and Participation</td>
-                            <td class="text-primary"><strong>Rs. 3,000 + GST</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Participation Only</td>
-                            <td class="text-primary"><strong>Rs. 2,500 + GST</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Online Presentation and Participation</td>
-                            <td class="text-primary"><strong>Rs. 1,500 + GST</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Online Participation Only</td>
-                            <td class="text-primary"><strong>Rs. 800 + GST</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Foreign Participants (Presentation and Participation)</td>
-                            <td class="text-primary"><strong>50 USD</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="text-primary" style="color: #B8860B; text-align: left; font-weight: bold;">
-                    SAAMS Life members are eligible for a 20% discount on all registered categories.
-                </p>
-                <p class="text-primary" style="color: #B8860B; text-align: left; font-weight: bold;">
-                    kindly check the website periodically for updates.
-                </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Benoit Rittaud</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Sorbonne Paris Nord University, France</span
+              >
+            </p>
 
-                <h3 class="mt-30">Fee Payment:</h3>
-                <p class="text-primary">
-                    Pay the registration fee through the link given below:<br>
-                    <a href="https://eventhubcc.vit.ac.in/EventHub/login" target="_blank" rel="noopener noreferrer"><strong>https://eventhubcc.vit.ac.in/EventHub/login</strong></a>
-                </p>
-                
-                <h4 class="mt-20">External Participants:</h4>
-                <ul class="text-primary line-height-18 mb-15">
-                    <li>Click "Sign Up" provide your details, select the appropriate participant type from the categories listed below and use the credentials sent to your email to log into the External Participant Login.</li>
-                </ul>
-                
-                <h4 class="mt-20">VITIANS:</h4>
-                <ul class="text-primary line-height-18 mb-15">
-                    <li>You must log in using your VTOP credentials.</li>
-                </ul>
-                
-                <h4 class="mt-20">Now to register for the event:</h4>
-                <ul class="text-primary line-height-18 mb-15">
-                    <li>Navigate to Events → Virtual Mode → ICNCS → Physical Mode, then click "View".</li>
-                    <li>Choose the event → View → Register → Pay Now → Complete the payment process.</li>
-                    <li>Save your payment receipt sent to your registered email.</li>
-                </ul>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sanjeewa Perera</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                University of Colombo, Sri Lanka</span
+              >
+            </p>
 
-                <h3 class="mt-30">Complete Registration:</h3>
-                <p class="text-primary">
-                    Complete your registration form at the link below:<br>
-                    <a href="https://docs.google.com/forms/d/1dayrDlUSsX2_zsnIKOu8qb7UkR66ZpAQgje2KJu3qXQ/edit" target="_blank" rel="noopener noreferrer"><strong>Registration</strong></a>
-                </p>
-                <p class="text-primary">
-                    <strong>That's it! You are all set to attend the event.</strong>
-                </p>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Gnanaraj Thomas</strong><br />
+              <span style="color: #444444"
+                >Former Professor<br />
+                Madras Christian College, Chennai</span
+              >
+            </p>
 
-                <h3 class="mt-30">Accommodation:</h3>
-                <p class="text-primary">
-                    Accommodation for participants will be arranged on a payment basis within the campus, on a first-come, first-served basis, if required. Payment details will be provided later.
-                </p>
-                <p class="text-primary" style="font-weight: bold;">
-                    No additional persons are allowed to accompany the registered participant in the hostel.
-                </p>
-            </section>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Gnanamalar David</strong><br />
+              <span style="color: #444444"
+                >Visiting Professor<br />
+                Liverpool Hope University, UK</span
+              >
+            </p>
 
-            <section id="contact">
-                <h2 style="color: #003366;">Contact Persons</h2>
-                <div class="contact-info">
-                    <p class="text-primary" style="font-weight: bold;">For any queries, please reach out to the organizing committee at:</p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Dr. Balamurugan B J</strong><br>
-                        <span style="color: #444444;">Associate Professor Senior, Vellore Institute of Technology, Chennai<br>
-                        <strong>Phone:</strong> <a href="tel:+919710344355" style="color: #0056b3;"><strong>+91-9710344355</strong></a></span>
-                    </p>
-                    
-                    <p class="mb-15">
-                        <strong style="color: #0056b3;">Prof. Madhumangal Pal</strong><br>
-                        <span style="color: #444444;">Professor, Vidyasagar University, West Bengal<br>
-                        <strong>Phone:</strong> <a href="tel:+918250002549" style="color: #0056b3;"><strong>+91-8250002549</strong></a></span>
-                    </p>
-                    
-                    <p>
-                        <span style="color: #444444;"><strong>Email:</strong> <a href="mailto:icgfg2026@gmail.com" style="color: #0056b3;"><strong>icgfg2026@gmail.com</strong></a></span>
-                    </p>
-                </div>
-            </section>
-        </main>
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Thirusangu K</strong><br />
+              <span style="color: #444444"
+                >Former Principal, Professor<br />
+                S.I.V.E.T College, Chennai</span
+              >
+            </p>
 
-        <aside class="organizer-box">
-            <h3>Organizers</h3>
-            <p class="mb-15 organizer-info" style="font-weight:bold;text-align: center;">Jointly organized by</p>
-            <div class="organizer-logo">
-                <img src="resources/vit_logo_coloured.jpg" alt="VIT Chennai Logo">
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. D. Arivudainambi</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Anna University, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sankar K</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Anna University, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Shalu M A</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                IIITDM, Kancheepuram</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sadagopan N</strong><br />
+              <span style="color: #444444"
+                >Associate Professor<br />
+                IIITDM, Kancheepuram</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sathishkumar A</strong><br />
+              <span style="color: #444444"
+                >Associate Professor<br />
+                IIT Madras</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Sivaraman R</strong><br />
+              <span style="color: #444444"
+                >Associate Professor<br />
+                Dwaraka Doss Goverdhan Doss Vaishnav College, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Padmapriya N</strong><br />
+              <span style="color: #444444"
+                >Associate Professor<br />
+                SSN College of Engineering, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Micheal Arockiaraj</strong
+              ><br />
+              <span style="color: #444444"
+                >Associate Professor<br />
+                Loyola College, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. B. Krishna Kumar</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. N. Sukavanam</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Kalyani Desikan</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Kaliyappan M</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Mini Ghosh</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Muthunagai</strong><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. David Maxim Gururaj A</strong
+              ><br />
+              <span style="color: #444444"
+                >Professor<br />
+                Vellore Institute of Technology, Chennai</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Kaliraj K</strong><br />
+              <span style="color: #444444"
+                >Assistant Professor<br />
+                Ramanujan Institute for Advanced Study in Mathematics<br />
+                University of Madras</span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. S. Kayalvizhi</strong><br />
+              <span style="color: #444444"
+                >Assistant Professor<br />
+                NIT Tirchy</span
+              >
+            </p>
+          </div>
+        </section>
+
+        <section id="guidelines">
+          <h2 style="color: #003366">Guidelines</h2>
+          <p class="text-primary">
+            Guidelines for abstract and paper submission will be announced soon.
+          </p>
+          <h3>Abstract Preparation</h3>
+          <p class="text-primary">
+            Abstracts should be prepared according to the provided template in
+            MS Word format only.
+          </p>
+          <h3>Paper Format</h3>
+          <p class="text-primary">
+            Full papers must follow the conference formatting guidelines and
+            should not exceed the specified page limit.
+          </p>
+        </section>
+
+        <section id="venue">
+          <h2 style="color: #003366">Venue</h2>
+          <h3>VIT Chennai Campus</h3>
+          <p class="text-secondary">
+            <strong>Vellore Institute of Technology</strong><br />
+            School of Advanced Sciences<br />
+            VIT Chennai Campus<br />
+            Chennai, Tamil Nadu, India
+          </p>
+          <h3>How to Reach</h3>
+          <p class="text-secondary">
+            VIT Chennai is easily accessible from Chennai International Airport
+            and major railway stations. Detailed directions will be provided to
+            registered participants.
+          </p>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.040939448087!2d80.15073452683751!3d12.84063106773255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259af8e491f67%3A0x944b42131b757d2d!2sVellore%20Institute%20of%20Technology%20-%20Chennai!5e0!3m2!1sen!2sin!4v1765994497913!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <h3 class="mt-30">Accommodation:</h3>
+          <p class="text-primary">
+            Accommodation for participants will be arranged on a payment basis
+            within the campus, on a first-come, first-served basis, if required.
+            Payment details will be provided later.
+          </p>
+          <p class="text-primary" style="font-weight: bold">
+            No additional persons are allowed to accompany the registered
+            participant in the hostel.
+          </p>
+        </section>
+
+        <section id="themes">
+          <h2 style="color: #003366">Themes</h2>
+          <ul class="text-primary line-height-18">
+            <li><strong>Graph theory</strong></li>
+            <li><strong>Algebraic Graph Theory</strong></li>
+            <li><strong>Spectral graph theory</strong></li>
+            <li>
+              <strong>Graph theory in communication and sensor networks</strong>
+            </li>
+            <li>
+              <strong>Fuzzy graph models for decision-making systems</strong>
+            </li>
+            <li>
+              <strong>Graph-based optimization in smart farming and IoT</strong>
+            </li>
+            <li>
+              <strong
+                >Applications of Fuzzy graphs in engineering systems</strong
+              >
+            </li>
+            <li>
+              <strong
+                >Graph theory in data science and network analytics</strong
+              >
+            </li>
+            <li>
+              <strong
+                >Uncertainty modeling using Fuzzy and hybrid graphs</strong
+              >
+            </li>
+            <li>
+              <strong>Graph-theoretic approaches in machine learning</strong>
+            </li>
+            <li>
+              <strong
+                >Network reliability and security using graph models</strong
+              >
+            </li>
+            <li>
+              <strong>Graph theory in biological and healthcare systems</strong>
+            </li>
+            <li>
+              <strong
+                >Fuzzy graph applications in transportation and
+                logistics</strong
+              >
+            </li>
+            <li>
+              <strong
+                >Graph-based modeling for energy-efficient networks</strong
+              >
+            </li>
+            <li>
+              <strong
+                >Applications of graph theory in social and economic
+                networks</strong
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section id="speakers">
+          <h2 style="color: #003366">Eminent Speakers</h2>
+
+          <h3 class="mt-30" style="color: #b8860b">
+            <u>International Speakers:</u>
+          </h3>
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/ispeaker-4.jpg" alt="Prof. Douglas B. West" />
             </div>
-            <div class="organizer-info">
-                <p class="text-center">
-                    <strong>Department of Mathematics</strong><br>
-                    <strong>School of Advanced Sciences</strong><br>
-                    <strong>Vellore Institute of Technology, Chennai</strong><br>
-                    <strong>Tamil Nadu, India</strong><br>
-                </p>
-                
-                <div class="logo-container">
-                    <img src="resources/vidyasagar.png" alt="Vidyasagar University Logo">
-                </div>
-                <p class="text-center">
-                    <b>Department of Research and Development Cell</b><br>
-                    <b>Vidyasagar University, West Bengal</b>
-                </p>
-                <p class="mt-15" style="text-align: center;">
-                    <strong>in coordination with</strong>
-                </p>
-                <div class="logo-container">
-                    <img src="resources/saamslogo.png" alt="SAAMS Logo">
-                </div>
-                <p class="text-center">
-                    <b>Sridharacharya Academy of Mathematical Sciences (SAAMS)</b>
-                </p>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Prof. Douglas B. West</h4>
+              <p style="color: #444444">
+                Professor Emeritus<br />Department of Mathematics<br />University
+                of Illinois
+              </p>
             </div>
-        </aside>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/ispeaker-5.png" alt="Dr. Srini Ramaswamy" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Dr. Srini Ramaswamy</h4>
+              <p style="color: #444444">
+                Former Professor & Department Chair<br />Global R&D Leader, USA
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/ispeaker-1.jpg" alt="Prof. Ayman Badawi" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Prof. Ayman Badawi</h4>
+              <p style="color: #444444">
+                Professor<br />Department of Mathematics<br />American
+                University of Sharjah, UAE
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/ispeaker-2.jpg" alt="Prof. Kinkar Das" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Prof. Kinkar Das</h4>
+              <p style="color: #444444">
+                Professor<br />Department of Mathematics<br />Sungkyunkwan
+                University (SKKU), South Korea
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/ispeaker-3.jpg" alt="Dr. Milica Anđelić" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Dr. Milica Anđelić</h4>
+              <p style="color: #444444">
+                Associate Professor<br />Department of Mathematics<br />Kuwait
+                University
+              </p>
+            </div>
+          </div>
+
+          <h3 class="mt-40" style="color: #b8860b" style="color: #b8860b">
+            <u>Indian Speakers:</u>
+          </h3>
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/speaker-2.jpg" alt="Dr. S. Arumugam" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Dr. S. Arumugam</h4>
+              <p style="color: #444444">
+                Senior Professor (Research)<br />Kalasalingam Academy of
+                Research and Education<br />Kalasalingam University, India
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/speaker-6.png" alt="Prof. R Balakrishnan" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Prof. R Balakrishnan</h4>
+              <p style="color: #444444">
+                Adjunct Professor<br />Department of Mathematics<br />Bharathidasan
+                University, Tamilnadu
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/speaker-1.jpg" alt="Dr. Indra Rajasingh" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Dr. Indra Rajasingh</h4>
+              <p style="color: #444444">
+                Former Professor<br />VIT University, Chennai
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/speaker-5.png" alt="Prof. Ankur Bharali" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Prof. Ankur Bharali</h4>
+              <p style="color: #444444">
+                Professor<br />Department of Mathematics<br />Director of IQAC,
+                Director(Hon.) of CIQA, CDOE<br />Dibrugarh University, Assam
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/speaker-7.jpg" alt="Prof. Shalu M A" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Prof. Shalu M A</h4>
+              <p style="color: #444444">
+                Professor in Mathematics<br />IIITDM, Kancheepuram, India
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/speaker-3.jpg" alt="Dr. Sunil Mathew" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Dr. Sunil Mathew</h4>
+              <p style="color: #444444">
+                Associate Professor<br />Department of Mathematics<br />National
+                Institute of Technology Calicut<br />Kerala, India
+              </p>
+            </div>
+          </div>
+          <hr class="speaker-divider" />
+
+          <div class="speaker-item">
+            <div class="speaker-photo">
+              <img src="resources/speaker-4.jpg" alt="Dr. Anita Pal" />
+            </div>
+            <div class="speaker-info">
+              <h4 style="color: #0056b3">Dr. Anita Pal</h4>
+              <p style="color: #444444">
+                Associate Professor<br />Department of Mathematics<br />National
+                Institute of Technology Durgapur
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="deadlines">
+          <h2 style="color: #003366">Important Dates</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Last Date For Abstract Submission:</td>
+                <td class="text-primary">21<sup>st</sup> February 2026</td>
+              </tr>
+              <tr>
+                <td>Abstract Acceptance Status:</td>
+                <td class="text-primary">23<sup>rd</sup> February 2026</td>
+              </tr>
+              <tr>
+                <td>
+                  Full Paper Submission
+                  <i
+                    ><span style="font-size: 14px"
+                      >(After Completion of Conference)</span
+                    ></i
+                  >
+                </td>
+                <td class="text-primary">15<sup>th</sup> April 2026</td>
+              </tr>
+              <tr>
+                <td>Registration For Participation:</td>
+                <td class="text-primary">13<sup>th</sup> March 2026</td>
+              </tr>
+              <tr>
+                <td>Conference Dates:</td>
+                <td class="text-primary">26 – 27 March 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="submission">
+          <h2 style="color: #003366">Abstract Submission</h2>
+          <p class="text-primary">
+            At least one author of the accepted abstract must register and
+            present the paper in the conference, either in Virtual mode or
+            Physical mode. Otherwise, the paper will not be processed further
+            for publication.
+          </p>
+          <ul class="text-primary line-height-18">
+            <li>
+              If presenting a paper, submit your abstract at the link given
+              below:<br />
+              <a
+                href="https://docs.google.com/forms/d/1E71zf_9TWL-t_JQZTiLMsF7YYavMKQh0GIfd_lWTJEk/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Abstract Submission Form</strong></a
+              >
+            </li>
+            <li>
+              Download the abstract template to prepare your submission:<br />
+              <a href="resources/Abstract Template.docx" download
+                ><strong>Abstract Template.docx</strong></a
+              >
+            </li>
+            <li>
+              For Registration, submit the
+              <a
+                href="https://docs.google.com/forms/d/1dayrDlUSsX2_zsnIKOu8qb7UkR66ZpAQgje2KJu3qXQ/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Registration Form</strong></a
+              >
+              and check
+              <a href="#registration"><strong>Registration section</strong></a>
+              for further details.
+            </li>
+          </ul>
+        </section>
+
+        <section id="publication">
+          <h2 style="color: #003366">Publication of Papers</h2>
+          <p class="text-primary">
+            Accepted and presented papers will undergo peer review and will be
+            considered for publication in a Scopus-indexed journal or book
+            series. Details will be announced during the conference. Additional
+            charges are applicable based on the publication platform.
+          </p>
+        </section>
+
+        <section id="registration">
+          <h2 style="color: #003366">Registration</h2>
+
+          <h3 class="mt-20">Registration Fees:</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>Paper Presentation and Participation</td>
+                <td class="text-primary"><strong>Rs. 3,000 + GST</strong></td>
+              </tr>
+              <tr>
+                <td>Participation Only</td>
+                <td class="text-primary"><strong>Rs. 2,500 + GST</strong></td>
+              </tr>
+              <tr>
+                <td>Online Presentation and Participation</td>
+                <td class="text-primary"><strong>Rs. 1,500 + GST</strong></td>
+              </tr>
+              <tr>
+                <td>Online Participation Only</td>
+                <td class="text-primary"><strong>Rs. 800 + GST</strong></td>
+              </tr>
+              <tr>
+                <td>Foreign Participants (Presentation and Participation)</td>
+                <td class="text-primary"><strong>50 USD</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <p
+            class="text-primary"
+            style="color: #b8860b; text-align: left; font-weight: bold"
+          >
+            SAAMS Life members are eligible for a 20% discount on all registered
+            categories.
+          </p>
+          <p
+            class="text-primary"
+            style="color: #b8860b; text-align: left; font-weight: bold"
+          >
+            kindly check the website periodically for updates.
+          </p>
+
+          <h3 class="mt-30">Fee Payment:</h3>
+          <p class="text-primary">
+            Pay the registration fee through the link given below:<br />
+            <a
+              href="https://eventhubcc.vit.ac.in/EventHub/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>https://eventhubcc.vit.ac.in/EventHub/login</strong></a
+            >
+          </p>
+
+          <h4 class="mt-20">External Participants:</h4>
+          <ul class="text-primary line-height-18 mb-15">
+            <li>
+              Click "Sign Up" provide your details, select the appropriate
+              participant type from the categories listed below and use the
+              credentials sent to your email to log into the External
+              Participant Login.
+            </li>
+          </ul>
+
+          <h4 class="mt-20">VITIANS:</h4>
+          <ul class="text-primary line-height-18 mb-15">
+            <li>You must log in using your VTOP credentials.</li>
+          </ul>
+
+          <h4 class="mt-20">Now to register for the event:</h4>
+          <ul class="text-primary line-height-18 mb-15">
+            <li>
+              Navigate to Events → Virtual Mode → ICNCS → Physical Mode, then
+              click "View".
+            </li>
+            <li>
+              Choose the event → View → Register → Pay Now → Complete the
+              payment process.
+            </li>
+            <li>Save your payment receipt sent to your registered email.</li>
+          </ul>
+
+          <h3 class="mt-30">Complete Registration:</h3>
+          <p class="text-primary">
+            Complete your registration form at the link below:<br />
+            <a
+              href="https://docs.google.com/forms/d/1dayrDlUSsX2_zsnIKOu8qb7UkR66ZpAQgje2KJu3qXQ/edit"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Registration</strong></a
+            >
+          </p>
+          <p class="text-primary">
+            <strong>That's it! You are all set to attend the event.</strong>
+          </p>
+
+          <h3 class="mt-30">Accommodation:</h3>
+          <p class="text-primary">
+            Accommodation for participants will be arranged on a payment basis
+            within the campus, on a first-come, first-served basis, if required.
+            Payment details will be provided later.
+          </p>
+          <p class="text-primary" style="font-weight: bold">
+            No additional persons are allowed to accompany the registered
+            participant in the hostel.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2 style="color: #003366">Contact Persons</h2>
+          <div class="contact-info">
+            <p class="text-primary" style="font-weight: bold">
+              For any queries, please reach out to the organizing committee at:
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Dr. Balamurugan B J</strong><br />
+              <span style="color: #444444"
+                >Associate Professor Senior, Vellore Institute of Technology,
+                Chennai<br />
+                <strong>Phone:</strong>
+                <a href="tel:+919710344355" style="color: #0056b3"
+                  ><strong>+91-9710344355</strong></a
+                ></span
+              >
+            </p>
+
+            <p class="mb-15">
+              <strong style="color: #0056b3">Prof. Madhumangal Pal</strong
+              ><br />
+              <span style="color: #444444"
+                >Professor, Vidyasagar University, West Bengal<br />
+                <strong>Phone:</strong>
+                <a href="tel:+918250002549" style="color: #0056b3"
+                  ><strong>+91-8250002549</strong></a
+                ></span
+              >
+            </p>
+
+            <p>
+              <span style="color: #444444"
+                ><strong>Email:</strong>
+                <a href="mailto:icgfg2026@gmail.com" style="color: #0056b3"
+                  ><strong>icgfg2026@gmail.com</strong></a
+                ></span
+              >
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="organizer-box">
+        <h3>Organizers</h3>
+        <p
+          class="mb-15 organizer-info"
+          style="font-weight: bold; text-align: center"
+        >
+          Jointly organized by
+        </p>
+        <div class="organizer-logo">
+          <img src="resources/vit_logo_coloured.jpg" alt="VIT Chennai Logo" />
+        </div>
+        <div class="organizer-info">
+          <p class="text-center">
+            <strong>Department of Mathematics</strong><br />
+            <strong>School of Advanced Sciences</strong><br />
+            <strong>Vellore Institute of Technology, Chennai</strong><br />
+            <strong>Tamil Nadu, India</strong><br />
+          </p>
+
+          <div class="logo-container">
+            <img
+              src="resources/vidyasagar.png"
+              alt="Vidyasagar University Logo"
+            />
+          </div>
+          <p class="text-center">
+            <b>Department of Research and Development Cell</b><br />
+            <b>Vidyasagar University, West Bengal</b>
+          </p>
+          <p class="mt-15" style="text-align: center">
+            <strong>in coordination with</strong>
+          </p>
+          <div class="logo-container">
+            <img src="resources/saamslogo.png" alt="SAAMS Logo" />
+          </div>
+          <p class="text-center">
+            <b>Sridharacharya Academy of Mathematical Sciences (SAAMS)</b>
+          </p>
+        </div>
+      </aside>
     </div>
 
     <footer class="footer">
-        <p>&copy; ICGFG-2026. Designed by School of Advanced Sciences, VIT Chennai</p>
-        <p>
-            <a href="#about">Home</a> | 
-            <a href="#about">About</a> | 
-            <a href="#registration">Registration</a> | 
-            <a href="#contact">Contact</a>
-        </p>
+      <p>
+        &copy; ICGFG-2026. Designed by School of Advanced Sciences, VIT Chennai
+      </p>
+      <p>
+        <a href="#about">Home</a> | <a href="#about">About</a> |
+        <a href="#registration">Registration</a> |
+        <a href="#contact">Contact</a>
+      </p>
     </footer>
 
     <script src="vit-script.js"></script>
-</body>
+  </body>
 </html>
-
-
