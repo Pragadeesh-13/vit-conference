@@ -257,6 +257,8 @@ nav {
 .ticker-item strong {
   color: #003366;
   white-space: nowrap;
+  font-size: inherit;
+  font-weight: 600;
 }
 
 .ticker-item sup {
