@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -199,6 +201,73 @@ nav {
   text-decoration-color: #002147;
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
+}
+
+.important-dates-ticker {
+  display: flex;
+  align-items: stretch;
+  width: min(1400px, calc(100% - 40px));
+  margin: 12px auto 2px;
+  background-color: #a9d4ea;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ticker-label {
+  flex: 0 0 auto;
+  background-color: #002147;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.ticker-track-wrap {
+  flex: 1;
+  overflow: hidden;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  padding: 0 12px;
+  min-width: max-content;
+  animation: importantDatesScroll 55s linear infinite;
+}
+
+.ticker-item {
+  color: #103fae;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.ticker-item strong {
+  color: #003366;
+}
+
+.ticker-separator {
+  color: #d11d1d;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@keyframes importantDatesScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .container {
@@ -661,6 +730,21 @@ table td:first-child {
   .organizer-info {
     font-size: 13px;
   }
+
+  .important-dates-ticker {
+    width: min(1400px, calc(100% - 30px));
+    margin: 10px auto 2px;
+  }
+
+  .ticker-label {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .ticker-item,
+  .ticker-separator {
+    font-size: 15px;
+  }
 }
 
 /* Medium laptops (up to 1124px) */
@@ -730,6 +814,21 @@ table td:first-child {
   .organizer-box img {
     max-width: 100px;
   }
+
+  .important-dates-ticker {
+    width: min(1400px, calc(100% - 24px));
+    margin: 8px auto 2px;
+  }
+
+  .ticker-label {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .ticker-item,
+  .ticker-separator {
+    font-size: 14px;
+  }
 }
 
 /* Tablets and smaller laptops (up to 1024px) */
@@ -749,6 +848,10 @@ table td:first-child {
 
   .organizer-box {
     flex: 0 0 250px;
+  }
+
+  .important-dates-ticker {
+    width: calc(100% - 20px);
   }
 }
 
@@ -903,6 +1006,26 @@ table td:first-child {
   .nav-bar li a {
     padding: 16px 20px;
   }
+
+  .important-dates-ticker {
+    width: calc(100% - 16px);
+    margin: 16px auto 2px;
+    border-radius: 8px;
+  }
+
+  .ticker-label {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .ticker-item,
+  .ticker-separator {
+    font-size: 13px;
+  }
+
+  .ticker-track {
+    animation-duration: 45s;
+  }
 }
 
 /* Mobile devices (up to 710px) - Hamburger menu breakpoint */
@@ -963,6 +1086,26 @@ table td:first-child {
 
   .header-logo img {
     height: 60px;
+  }
+
+  .important-dates-ticker {
+    width: calc(100% - 12px);
+    margin: 14px auto 2px;
+    border-radius: 6px;
+  }
+
+  .ticker-label {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .ticker-item,
+  .ticker-separator {
+    font-size: 12px;
+  }
+
+  .ticker-track {
+    animation-duration: 38s;
   }
 }
 
@@ -1134,6 +1277,27 @@ table td:first-child {
     font-size: 14px;
     margin-bottom: 8px;
   }
+
+  .important-dates-ticker {
+    width: calc(100% - 10px);
+    margin: 28px auto 2px;
+    border-radius: 6px;
+  }
+
+  .ticker-label {
+    font-size: 11px;
+    padding: 8px 9px;
+  }
+
+  .ticker-item,
+  .ticker-separator {
+    font-size: 11px;
+  }
+
+  .ticker-track {
+    animation-duration: 32s;
+    gap: 8px;
+  }
 }
 
 /* Extra small devices (up to 360px) */
@@ -1170,6 +1334,24 @@ table td:first-child {
   .hamburger span {
     width: 20px;
     height: 2px;
+  }
+
+  .important-dates-ticker {
+    border-radius: 4px;
+  }
+
+  .ticker-label {
+    font-size: 10px;
+    padding: 7px 8px;
+  }
+
+  .ticker-item,
+  .ticker-separator {
+    font-size: 10px;
+  }
+
+  .ticker-track {
+    animation-duration: 28s;
   }
 }
 
