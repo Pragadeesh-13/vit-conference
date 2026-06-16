@@ -1370,9 +1370,9 @@ table td:first-child {
   }
 }
 
-/* Extra small devices - line break for date (up to 415px) */
 @media (max-width: 415px) {
   .break-small {
     display: block;
   }
 }
+/* EOF */
